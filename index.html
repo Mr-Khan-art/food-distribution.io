@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>খাবারের দায়িত্ব</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <div class="logo">🍽️</div>
+            <h1>খাবারের দায়িত্ব</h1>
+            <p>সেপ্টেম্বর ২০২৬</p>
+        </header>
+
+
+        <!-- Search Section -->
+        <section class="search-section">
+
+            <h2>ID দিয়ে দায়িত্ব খুঁজুন</h2>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="idInput"
+                    placeholder="আপনার ID লিখুন"
+                    inputmode="numeric"
+                >
+
+                <button onclick="searchDuty()">
+                    🔍 সার্চ
+                </button>
+            </div>
+
+        </section>
+
+
+        <!-- Today's Duty Button -->
+        <section class="today-section">
+
+            <button class="today-button" onclick="showTodayDuty()">
+                📅 আজকের দায়িত্ব
+            </button>
+
+        </section>
+
+
+        <!-- Result -->
+        <section id="result"></section>
+
+    </div>
+
+
+    <footer>
+        খাবারের দায়িত্ব ব্যবস্থাপনা • সেপ্টেম্বর ২০২৬
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

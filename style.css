@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans Bengali", sans-serif;
+    background: linear-gradient(135deg, #eef8f3, #f8fbfa);
+    color: #17372c;
+    min-height: 100vh;
+}
+
+
+/* Main Container */
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+    padding: 25px 16px 50px;
+}
+
+
+/* Header */
+
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #0d5c3b, #16835a);
+    color: white;
+    padding: 35px 20px;
+    border-radius: 24px;
+    box-shadow: 0 12px 35px rgba(13, 92, 59, 0.20);
+}
+
+.logo {
+    font-size: 48px;
+    margin-bottom: 5px;
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+header p {
+    margin-top: 4px;
+    opacity: 0.9;
+}
+
+
+/* Search */
+
+.search-section {
+    margin-top: 22px;
+    background: white;
+    padding: 25px 20px;
+    border-radius: 20px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.06);
+}
+
+.search-section h2 {
+    text-align: center;
+    margin-bottom: 17px;
+    font-size: 21px;
+}
+
+
+.search-box {
+    display: flex;
+    gap: 8px;
+    background: #f5f8f6;
+    padding: 6px;
+    border-radius: 14px;
+}
+
+.search-box input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+
+    padding: 12px;
+    font-family: inherit;
+    font-size: 17px;
+    color: #17372c;
+}
+
+.search-box input::placeholder {
+    color: #89968f;
+}
+
+
+.search-box button {
+    border: none;
+    background: #0d5c3b;
+    color: white;
+
+    padding: 0 20px;
+    border-radius: 10px;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.search-box button:hover {
+    background: #09482f;
+}
+
+
+/* Today Button */
+
+.today-section {
+    margin-top: 15px;
+}
+
+.today-button {
+    width: 100%;
+
+    border: 2px solid #0d5c3b;
+    background: white;
+    color: #0d5c3b;
+
+    padding: 15px;
+    border-radius: 15px;
+
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.today-button:hover {
+    background: #0d5c3b;
+    color: white;
+}
+
+
+/* Result */
+
+#result {
+    margin-top: 22px;
+}
+
+
+.result-box {
+    background: white;
+    border-radius: 20px;
+    padding: 22px;
+
+    box-shadow: 0 7px 25px rgba(0,0,0,0.07);
+}
+
+
+.result-title {
+    text-align: center;
+    color: #0d5c3b;
+    margin-bottom: 18px;
+}
+
+.result-title h2 {
+    font-size: 23px;
+}
+
+.result-title p {
+    color: #6d7d75;
+    margin-top: 3px;
+}
+
+
+/* Duty Card */
+
+.duty-card {
+    border: 1px solid #e0ebe5;
+    border-left: 5px solid #0d5c3b;
+
+    border-radius: 14px;
+
+    padding: 16px;
+    margin-bottom: 12px;
+
+    background: #fbfdfc;
+}
+
+.duty-date {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.duty-day {
+    color: #718078;
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+
+.duty-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+
+.tag {
+    background: #e9f5ef;
+    color: #0d5c3b;
+
+    padding: 6px 10px;
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.shift-tag {
+    background: #fff2cf;
+    color: #765500;
+}
+
+
+/* Error */
+
+.error {
+    text-align: center;
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+
+    color: #c0392b;
+
+    box-shadow: 0 7px 25px rgba(0,0,0,0.06);
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background: #0a4c32;
+    color: #dceee7;
+
+    padding: 18px 10px;
+
+    font-size: 13px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 500px) {
+
+    .container {
+        padding: 15px 12px 35px;
+    }
+
+    header {
+        padding: 28px 15px;
+        border-radius: 20px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    .logo {
+        font-size: 40px;
+    }
+
+    .search-section {
+        padding: 20px 14px;
+    }
+
+    .search-section h2 {
+        font-size: 19px;
+    }
+
+    .search-box input {
+        font-size: 15px;
+    }
+
+    .search-box button {
+        padding: 0 14px;
+    }
+
+    .result-box {
+        padding: 17px;
+    }
+
+}
